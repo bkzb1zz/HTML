@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="get">
+
+    <table border="1">
+      <tr>
+        <th>Last Name</th>
+        <td>
+          <input type="text" name="name" required autofocus="1">
+        </td>
+      </tr>
+      <tr>
+        <th>First Name</th>
+        <td>
+          <input type="text" name="name" required>
+        </td>
+      </tr>
+      <tr>
+        <th>Adress</th>
+          <td>
+            <textarea name="name" rows="3" cols="20" required></textarea>
+          </td>
+          <br>
+      </tr>
+    <tr>
+      <th>City</th>
+        <td>
+          <input type="text" name="name" required/>
+          <label for="state"><b>State</b></label>
+          <input type="text" name="name" id="state" size="2" required/>
+        </td>
+      </tr>
+      <tr>
+        <th>Zip/Postal Code</th>
+        <td>
+          <input name="name" type="text" size="5" required>
+        </td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td>
+          <select name="Country" name="name">
+            <option>Bulgaria</option>
+            <option>etc</option>
+            <option>etc</option>
+            <option>etc</option>
+            <option>etc</option>
+            </select>
+        </td>
+        <tr>
+          <th>Phone {country code, <br> area code, number}</th>
+          <td>
+            (+ <input type="text" size="1" required> ) <input type="text" size="1" required> - <input type="text" size="5" required>
+          </td>
+        </tr>
+      </tr>
+      <tr>
+        <th>E-mail</th>
+        <td>
+          <input type="email" name="Email" required>
+        </td>
+      </tr>
+      <tr>
+        <th>Birth date</th><td>
+          Month <input type="text" size="1" required> Day <input type="text" size="1" required> Year (4 digit)<input type="text" size="2" required>
+        </td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>
+          <select name="Gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Starting Date</th>
+        <td>
+          <input type="radio" name="date">
+          Spring 2006
+          <input type="radio" name="date">
+          Summer 2006
+        </td>
+      </tr>
+      <tr>
+        <th>Comments/Questions</th>
+        <td>
+          <textarea name="name" rows="5" cols="20" required></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" bgcolor="lightblue" style="">
+          <input type="reset" name="name" value="Clear this form" required style="float: right; margin-right: 140px;">
+          <input type="submit" name="RESET" value="Submit"required style="float: right; margin-right: 0px;">
+        </td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <form method="get" action="action.php">
+      <label>UserName</label><br>
+      <input type="Text" name="TEST" value=""><br>
+      <input type="hidden" name="name" value="This is hidden"><br>
+      <input type="In" name="name" value="Select"><br>
+      <select name="ASD">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select><br>
+      <label>Password</label><br>
+      <input type="password" name="Password" value=""><br>
+      <input type="checkbox" name="name" value="Check"><br>
+      <input type="radio" name="name" value="Radio" name="items[]"><br>
+      <input type="radio" name="name" value="Radio" name="items[]"><br>
+      <input type="checkbox" name="name" value="Check" checked="">
+      <input type="image" width="50" value= "click" src="http://previews.123rf.com/images/antonbrand/antonbrand1111/antonbrand111100008/11271469-Carton-superhero-in-classic-pose-Isolated-on-white-Stock-Vector.jpg"> <br>
+      <input type="button" name="TEST2" value="Log in"><br>
+      <button>Register</button><br>
+      <input type="reset" name="RESET" value="Reset"><br>
+      <input type="submit" name="name" value="Submit"><br>
+      <form class="" action="" method="post">
+        <fieldset>
+          <legend>UserINF</legend>
+          <label for="">Username</label>
+          <input type="password" name="name" value="Password">
+        </fieldset><br>
+        <input type="range" name="name" value="Range"><br>
+        <input type="number" name="name" step="3" value="10" min="1" max="99"><br>
+        <input type="email" name="Email" required pattern="[a-z]{3, }@{a-z}.[2-4]" value="" placeholder="Enter Email" autofocus="">
+        
+      </form>
+    </form>
+  </body>
+</html>

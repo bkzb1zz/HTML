@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Problem 4</title>
+    <style media="screen">
+      table,td,th {
+        border:1px solid #C0C0C0;
+        border-collapse: collapse;
+        border-color: #C0C0C0;
+      }
+    </style>
+    <style media="screen">table {
+      border-radius: 25px;
+      border: 2px;
+      padding: 20px;
+      }
+    </style>
+    <style media="screen">
+      table,td,th,tr{
+         text-align: left
+      }
+    </style>
+    <style media="screen">
+      th {
+        background-color: #f1f1f1}
+    </style>
+  </head>
+  <body>
+    <form method="post">
+      <table>
+        <tr>
+          <th colspan="6"><font size="2">Drag a colomn header and drop it here to group by that column</font></th>
+        </tr>
+        <tr>
+          <th width="70"><font size="2">ProductID</font></th>
+          <th width="210"><font size="2">Product Name</font></th>
+          <th width="120"><font size="2">Unit Price</font></th>
+          <th width="180"><font size="2">Quantity per unit</font></th>
+          <th width="150"><font size="2">Units in stock</font></th>
+          <th width="120"><font size="2">Discontinued</font></th>
+        </tr>
+        <tr>
+          <th><input type="text" name="ProductID" value="" size="1"></th>
+          <th><input type="text" name="ProductName" value="" size="15"></th>
+          <th><input type="text" name="UnitPrice" value="" size="8"><img src="http://mobile.eurosmartz.com/help/help_am/notfilter.jpg" alt="FilterButton" height="16"/></th>
+          <th><input type="text" name="QuantityPerUnit" value="" size="13"></th>
+          <th><input type="text" name="UnitsInStock" value="" size="9"><img src="http://mobile.eurosmartz.com/help/help_am/notfilter.jpg" alt="FilterButton" height="16"/></th>
+          <th><input type="checkbox" name="Discontinued" value=""><img src="http://mobile.eurosmartz.com/help/help_am/notfilter.jpg" alt="FilterButton" height="16"/></th>
+        </tr>
+        <tr>
+          <td><font size="2">1</font></td>
+          <td><font size="2">Chai</font></td>
+          <td><font size="2">$18.00</font></td>
+          <td><font size="2">10 boxes x 20 bags</font></td>
+          <td><font size="2">39</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">2</font></td>
+          <td><font size="2">Chang</font></font></td>
+          <td><font size="2">$19.00</font></font></td>
+          <td><font size="2">24 - 12 oz bottles</font></font></td>
+          <td><font size="2">17</font></font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">3</font></td>
+          <td><font size="2">Aniseed Syrup</font></td>
+          <td><font size="2">$18.00</font></td>
+          <td><font size="2">12 - 550 ml bottles</font></td>
+          <td><font size="2">13</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">4</font></td>
+          <td><font size="2">Chef Anton's Cajun Seasoning</font></td>
+          <td><font size="2">$22.00</font></td>
+          <td><font size="2">48 - 6 oz jars</font></td>
+          <td><font size="2">53</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">5</font></td>
+          <td><font size="2">Chef Anton's Gumbo Mix</font></td>
+          <td><font size="2">$21.35</font></td>
+          <td><font size="2">36 boxes</font></td>
+          <td><font size="2">0</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">6</font></td>
+          <td><font size="2">Grandma's Boysenberry Spread</font></td>
+          <td><font size="2">$25.00</font></td>
+          <td><font size="2">12 - 8 oz jar</font></td>
+          <td><font size="2">120</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">7</font></td>
+          <td><font size="2">Uncle Bob's Organic Dried Pears</font></td>
+          <td><font size="2">$30.00</font></td>
+          <td><font size="2">12 - 1 lb pkgs.</font></td>
+          <td><font size="2">15</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">8</font></td>
+          <td><font size="2">Northwoods Cranberry Sauce</font></td>
+          <td><font size="2">$40.00</font></td>
+          <td><font size="2">12 - 12 oz jars</font></td>
+          <td><font size="2">6</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">9</font></td>
+          <td><font size="2">Mishi Kobe Niku</font></td>
+          <td><font size="2">$97.00</font></td>
+          <td><font size="2">18 - 500 g pkgs.</font></td>
+          <td><font size="2">29</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <td><font size="2">10</font></td>
+          <td><font size="2">Ikaru</font></td>
+          <td><font size="2">$31.00</font></td>
+          <td><font size="2">12 - 200 ml jars.</font></td>
+          <td><font size="2">31</font></td>
+          <td><input type="checkbox" name="Discontinued" value=""></td>
+        </tr>
+        <tr>
+          <th><input type="button" name="name" value="|◄">
+              <input type="button" name="name" value="◄">
+          </th>
+          <th>
+            <a href="" style="border:1px solid red">1</a> <font size="2">2 3 4 5 6 7 8 9 10 ...</font><input type="button" name="name" value="►">
+                <input type="button" name="name" value="►|">
+          </th>
+          <th>
+            <font size="2">Page size:</font>
+              <select name="UnitPrice">
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+          </th>
+          <th colspan="3" style="text-align: right"><font size="2">335104 items in 33511 pages</font></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
